@@ -1,0 +1,26 @@
+[MAIN]
+load-plugins=pylint_django
+django-settings-module=crm.settings
+ignore-paths=.*/migrations/*,.*/settings.py,.*/settings_test.py,.*/manage.py,.*/apps.py
+
+[MESSAGES CONTROL]
+disable=raw-checker-failed,
+        bad-inline-option,
+        locally-disabled,
+        file-ignored,
+        suppressed-message,
+        useless-suppression,
+        deprecated-pragma,
+        use-implicit-booleaness-not-comparison-to-string,
+        use-implicit-booleaness-not-comparison-to-zero,
+        use-symbolic-message-instead,
+        missing-module-docstring,
+        too-many-ancestors,
+        too-few-public-methods
+
+[BASIC]
+# Тестовые функции не обязаны иметь docstring
+no-docstring-rgx=^(_|test_)
+
+[FORMAT]
+max-line-length=100

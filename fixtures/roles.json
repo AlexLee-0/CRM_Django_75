@@ -1,0 +1,119 @@
+[
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "Оператор",
+      "permissions": [
+        [
+          "add_lead",
+          "leads",
+          "lead"
+        ],
+        [
+          "view_lead",
+          "leads",
+          "lead"
+        ],
+        [
+          "change_lead",
+          "leads",
+          "lead"
+        ],
+        [
+          "view_advertisement",
+          "advertisements",
+          "advertisement"
+        ]
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "Маркетолог",
+      "permissions": [
+        [
+          "add_product",
+          "products",
+          "product"
+        ],
+        [
+          "view_product",
+          "products",
+          "product"
+        ],
+        [
+          "change_product",
+          "products",
+          "product"
+        ],
+        [
+          "add_advertisement",
+          "advertisements",
+          "advertisement"
+        ],
+        [
+          "view_advertisement",
+          "advertisements",
+          "advertisement"
+        ],
+        [
+          "change_advertisement",
+          "advertisements",
+          "advertisement"
+        ]
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 3,
+    "fields": {
+      "name": "Менеджер",
+      "permissions": [
+        [
+          "add_contract",
+          "contracts",
+          "contract"
+        ],
+        [
+          "view_contract",
+          "contracts",
+          "contract"
+        ],
+        [
+          "change_contract",
+          "contracts",
+          "contract"
+        ],
+        [
+          "view_lead",
+          "leads",
+          "lead"
+        ],
+        [
+          "add_customer",
+          "customers",
+          "customer"
+        ],
+        [
+          "view_customer",
+          "customers",
+          "customer"
+        ],
+        [
+          "change_customer",
+          "customers",
+          "customer"
+        ],
+        [
+          "view_advertisement",
+          "advertisements",
+          "advertisement"
+        ]
+      ]
+    }
+  }
+]

@@ -1,0 +1,165 @@
+[
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "Разработка сайта-визитки",
+      "description": "Одностраничный сайт с формой обратной связи.",
+      "cost": "15000.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "SEO-продвижение",
+      "description": "Семантика, техаудит, внешние ссылки.",
+      "cost": "8000.00"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Настройка контекстной рекламы",
+      "description": "Настройка и ведение кампаний в Яндекс Директе.",
+      "cost": "5000.00"
+    }
+  },
+  {
+    "model": "advertisements.advertisement",
+    "pk": 1,
+    "fields": {
+      "name": "Запуск сайта — весна",
+      "product": 1,
+      "channel": "context_ads",
+      "budget": "20000.00"
+    }
+  },
+  {
+    "model": "advertisements.advertisement",
+    "pk": 2,
+    "fields": {
+      "name": "SEO для малого бизнеса",
+      "product": 2,
+      "channel": "social_media",
+      "budget": "12000.00"
+    }
+  },
+  {
+    "model": "advertisements.advertisement",
+    "pk": 3,
+    "fields": {
+      "name": "Реклама в Директе — лето",
+      "product": 3,
+      "channel": "email",
+      "budget": "9000.00"
+    }
+  },
+  {
+    "model": "leads.lead",
+    "pk": 1,
+    "fields": {
+      "first_name": "Иван",
+      "last_name": "Иванов",
+      "phone": "+79001112233",
+      "email": "ivanov@example.com",
+      "ad": 1
+    }
+  },
+  {
+    "model": "leads.lead",
+    "pk": 2,
+    "fields": {
+      "first_name": "Мария",
+      "last_name": "Петрова",
+      "phone": "+79002223344",
+      "email": "petrova@example.com",
+      "ad": 1
+    }
+  },
+  {
+    "model": "leads.lead",
+    "pk": 3,
+    "fields": {
+      "first_name": "Алексей",
+      "last_name": "Сидоров",
+      "phone": "+79003334455",
+      "email": "sidorov@example.com",
+      "ad": 2
+    }
+  },
+  {
+    "model": "leads.lead",
+    "pk": 4,
+    "fields": {
+      "first_name": "Ольга",
+      "last_name": "Кузнецова",
+      "phone": "+79004445566",
+      "email": "kuznetsova@example.com",
+      "ad": 2
+    }
+  },
+  {
+    "model": "leads.lead",
+    "pk": 5,
+    "fields": {
+      "first_name": "Дмитрий",
+      "last_name": "Смирнов",
+      "phone": "+79005556677",
+      "email": "smirnov@example.com",
+      "ad": 3
+    }
+  },
+  {
+    "model": "leads.lead",
+    "pk": 6,
+    "fields": {
+      "first_name": "Анна",
+      "last_name": "Волкова",
+      "phone": "+79006667788",
+      "email": "volkova@example.com",
+      "ad": 1
+    }
+  },
+  {
+    "model": "contracts.contract",
+    "pk": 1,
+    "fields": {
+      "name": "Договор №2026-001",
+      "product": 1,
+      "document": "contracts/demo-contract-001.txt",
+      "start_date": "2026-08-15",
+      "end_date": "2027-08-15",
+      "cost": "15000.00"
+    }
+  },
+  {
+    "model": "contracts.contract",
+    "pk": 2,
+    "fields": {
+      "name": "Договор №2026-002",
+      "product": 2,
+      "document": "contracts/demo-contract-002.txt",
+      "start_date": "2026-08-20",
+      "end_date": "2027-02-20",
+      "cost": "8000.00"
+    }
+  },
+  {
+    "model": "customers.customer",
+    "pk": 1,
+    "fields": {
+      "lead": 1,
+      "contract": 1
+    }
+  },
+  {
+    "model": "customers.customer",
+    "pk": 2,
+    "fields": {
+      "lead": 3,
+      "contract": 2
+    }
+  }
+]
